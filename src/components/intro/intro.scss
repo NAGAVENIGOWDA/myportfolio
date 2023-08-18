@@ -1,3 +1,69 @@
 .intro{
-    background-color: bisque;
+    background-color:white;
+    display: flex;
+    .left{
+        flex:1;
+        overflow: hidden;
+        .imageContainer{
+            width: 700px;
+            height: 700px;
+            display: flex;
+          background-color:#badce3;
+            border-radius: 50%;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+           
+
+            img{
+               width: 120%;
+            
+                height: 120%;
+              
+            }
+        }
+       
+       
+    }
+    .right{
+        flex: 1;
+        position: relative;
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1{
+                font-size: 60px;
+                margin: 10px 0;
+
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 30px;
+                span{
+                    font-size: inherit;
+                    color:#16a5c1
+                }
+            }
+        }
+      a{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        img{
+            width: 30px;
+            animation: arrowBlink 2s infinite;
+        }
+        @keyframes arrowBlink {
+            100%{
+                opacity: 0;
+            }
+        }
+      }
+    }
 }
