@@ -23,6 +23,13 @@ function Menu({menuOpen,setMenuOpen}) {
             <li onClick={handleClick}>
                 <a href="#contact">Contact</a>
             </li>
+            <div className="container">
+            <p>PhoneNo : <span>+91 1234567892</span></p>
+            <p>Email:nagaveniGowda@gmail.com</p>
+            </div>
+            
+          
+            
         </ul>
       </div>
     </div>

@@ -1,12 +1,12 @@
 @import "../../global.scss";
 
 .menu{
-    width: 300px;
+    width: 380px;
     height: 100vh;
     background-color:$mainColor ;
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -380px;
      z-index: 2;
      display: flex;
      flex-direction: column;
@@ -24,6 +24,17 @@
        font-weight: 300;
        color: white;
        width: 60%;
+       .container{
+        display: none;
+        font-size: 15px;
+        
+        @include mobile{
+        display: flex;
+        flex-direction: column;
+        }
+        
+       }
+       
        li{
         margin-bottom: 25px;
         a{
